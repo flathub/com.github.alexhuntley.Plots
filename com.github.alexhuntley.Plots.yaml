@@ -26,7 +26,8 @@ modules:
 cleanup:
   - '/lib/debug'
 finish-args:
-  - --socket=fallback-x11
+  - --socket=x11
+  - --share=ipc
   # Wayland access
   - --socket=wayland
   # OpenGL
