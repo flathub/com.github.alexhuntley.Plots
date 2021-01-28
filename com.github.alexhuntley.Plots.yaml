@@ -14,11 +14,12 @@ modules:
       - install -D res/com.github.alexhuntley.Plots.desktop -t /app/share/applications/
       - install -D res/com.github.alexhuntley.Plots.svg -t /app/share/icons/hicolor/scalable/apps/
       - install -D res/com.github.alexhuntley.Plots-symbolic.svg -t /app/share/icons/hicolor/symbolic/apps/
+      - install -D -t /app/share/help/C/plots/ help/C/*
     sources:
       - type: git
         url: https://github.com/alexhuntley/Plots.git
-        tag: v0.5.0
-        commit: 117a4a2981ed1c66031fdc15825f832b01d4f363
+        tag: v0.5.1
+        commit: dc5c6849ea9c980668914c9f0531d44ad1204570
       - type: archive
         url: http://www.gust.org.pl/projects/e-foundry/lm-math/download/latinmodern-math-1959.zip
         sha256: aaaa060b4ffc091461e875efb9498b9abfa7c7a48f38eb33882868839903a4f8
