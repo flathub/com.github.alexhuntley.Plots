@@ -1,6 +1,6 @@
 app-id: com.github.alexhuntley.Plots
 runtime: org.gnome.Platform
-runtime-version: '40'
+runtime-version: '42'
 sdk: org.gnome.Sdk
 command: plots
 modules:
@@ -15,12 +15,19 @@ modules:
       - install -D res/com.github.alexhuntley.Plots.svg -t /app/share/icons/hicolor/scalable/apps/
       - install -D res/com.github.alexhuntley.Plots-symbolic.svg -t /app/share/icons/hicolor/symbolic/apps/
       - install -D -t /app/share/help/C/plots/ help/C/*
+      - install -D -t /app/share/help/es/plots/ help/es/*
+      - install -D -t /app/share/help/fa/plots/ help/fa/*
       - install -D -t /app/share/help/fr/plots/ help/fr/*
+      - install -D -t /app/share/help/hr/plots/ help/hr/*
+      - install -D -t /app/share/help/it/plots/ help/it/*
+      - install -D -t /app/share/help/nb_NO/plots/ help/nb_NO/*
+      - install -D -t /app/share/help/nl/plots/ help/nl/*
+      - install -D -t /app/share/help/pt_BR/plots/ help/pt_BR/*
     sources:
       - type: git
         url: https://github.com/alexhuntley/Plots.git
-        tag: v0.6.1
-        commit: a5879cd4828b74b81e0dd629c4bc1a55e600d337
+        tag: v0.6.2
+        commit: e7dd86abd3af736abbe4a1b4350f466dc26f4a56
       - type: archive
         url: http://www.gust.org.pl/projects/e-foundry/lm-math/download/latinmodern-math-1959.zip
         sha256: aaaa060b4ffc091461e875efb9498b9abfa7c7a48f38eb33882868839903a4f8
