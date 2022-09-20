@@ -28,8 +28,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/alexhuntley/Plots.git
-        tag: v0.7.0
-        commit: 0e026100140d424ce3d26daf7d22500b71ecb7b5
+        tag: v0.8.0
+        commit: e9a86eb790baa56a06899f7ed6de96c5573c58ea
       - type: archive
         url: http://www.gust.org.pl/projects/e-foundry/lm-math/download/latinmodern-math-1959.zip
         sha256: aaaa060b4ffc091461e875efb9498b9abfa7c7a48f38eb33882868839903a4f8
