@@ -1,6 +1,6 @@
 app-id: com.github.alexhuntley.Plots
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '44'
 sdk: org.gnome.Sdk
 command: plots
 modules:
@@ -15,6 +15,7 @@ modules:
       - install -D res/com.github.alexhuntley.Plots.svg -t /app/share/icons/hicolor/scalable/apps/
       - install -D res/com.github.alexhuntley.Plots-symbolic.svg -t /app/share/icons/hicolor/symbolic/apps/
       - install -D -t /app/share/help/C/plots/ help/C/*
+      - install -D -t /app/share/help/cs/plots/ help/cs/*
       - install -D -t /app/share/help/de/plots/ help/de/*
       - install -D -t /app/share/help/es/plots/ help/es/*
       - install -D -t /app/share/help/fa/plots/ help/fa/*
@@ -22,23 +23,25 @@ modules:
       - install -D -t /app/share/help/hr/plots/ help/hr/*
       - install -D -t /app/share/help/hu/plots/ help/hu/*
       - install -D -t /app/share/help/it/plots/ help/it/*
+      - install -D -t /app/share/help/lt/plots/ help/lt/*
       - install -D -t /app/share/help/nb_NO/plots/ help/nb_NO/*
       - install -D -t /app/share/help/nl/plots/ help/nl/*
       - install -D -t /app/share/help/pt_BR/plots/ help/pt_BR/*
+      - install -D -t /app/share/help/tr/plots/ help/tr/*
+      - install -D -t /app/share/help/uk/plots/ help/uk/*
       - install -D -t /app/share/help/zh_Hans/plots/ help/zh_Hans/*
     sources:
       - type: git
         url: https://github.com/alexhuntley/Plots.git
-        tag: v0.8.4
-        commit: 17a557e447e1c5c805023544b1d5fdf0542b1a95
+        tag: v0.8.5
+        commit: ece71cb922ea2549a09bc9892d75913c2191ed4c
       - type: archive
         url: http://www.gust.org.pl/projects/e-foundry/lm-math/download/latinmodern-math-1959.zip
         sha256: aaaa060b4ffc091461e875efb9498b9abfa7c7a48f38eb33882868839903a4f8
         dest: latinmodern-math
-cleanup:
-  - '/lib/debug'
 finish-args:
   - --socket=fallback-x11
+  - --share=ipc
   # Wayland access
   - --socket=wayland
   # OpenGL
